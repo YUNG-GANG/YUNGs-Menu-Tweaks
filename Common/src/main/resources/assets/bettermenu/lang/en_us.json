@@ -1,5 +1,9 @@
 {
   "text.autoconfig.bettermenu-fabric-1_20.title": "YUNG's Better Menu",
-  "text.autoconfig.bettermenu-fabric-1_20.option.betterMenu.enableRightClickCycleButton": "Right Click Reverse Cycle",
-  "text.autoconfig.bettermenu-fabric-1_20.option.betterMenu.enableRightClickCycleButton.@Tooltip": "Allows right clicking to cycle backwards through some buttons."
+  "text.autoconfig.bettermenu-fabric-1_20.option.betterMenu.enableRightClickCycleButton": "Right Click Reverses Cycle Buttons",
+  "text.autoconfig.bettermenu-fabric-1_20.option.betterMenu.enableRightClickCycleButton.@Tooltip": "Allows right clicking to cycle backwards through some buttons.",
+  "text.autoconfig.bettermenu-fabric-1_20.option.betterMenu.enableMouseScrollOnSliders": "Mouse Scroll Wheel Affects Sliders",
+  "text.autoconfig.bettermenu-fabric-1_20.option.betterMenu.enableMouseScrollOnSliders.@Tooltip[0]": "Allows scrolling the mouse wheel to modify options using a slider",
+  "text.autoconfig.bettermenu-fabric-1_20.option.betterMenu.enableMouseScrollOnSliders.@Tooltip[1]": "when hovering over the slider."
+
 }

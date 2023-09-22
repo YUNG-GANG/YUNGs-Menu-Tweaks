@@ -5,6 +5,9 @@
   "refmap": "bettermenu.refmap.json",
   "mixins": [
   ],
+  "client": [
+    "AbstractSelectionListMixinFabric"
+  ],
   "injectors": {
     "defaultRequire": 1
   },

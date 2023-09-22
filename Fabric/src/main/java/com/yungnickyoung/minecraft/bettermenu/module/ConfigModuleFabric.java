@@ -22,5 +22,6 @@ public class ConfigModuleFabric {
 
     private static void bakeConfig(BMConfigFabric configFabric) {
         BetterMenuCommon.CONFIG.enableRightClickCycleButton = configFabric.betterMenu.enableRightClickCycleButton;
+        BetterMenuCommon.CONFIG.enableMouseScrollOnSliders = configFabric.betterMenu.enableMouseScrollOnSliders;
     }
 }
