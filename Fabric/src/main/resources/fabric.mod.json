@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_full_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "YUNGNICKYOUNG"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-menu-fabric",
+    "sources": "https://github.com/yungnickyoung/YUNGs-Better-Menu",
+    "issues": "https://github.com/yungnickyoung/YUNGs-Better-Menu/issues",
+    "discord": "discord.gg/rns3beq"
+  },
+  "license": "LGPLv3",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.yungnickyoung.minecraft.bettermenu.BetterMenuFabric"
+    ],
+    "modmenu": [
+      "com.yungnickyoung.minecraft.bettermenu.config.gui.BMModMenu"
+    ]
+  },
+  "mixins": [
+    "bettermenu.mixins.json",
+    "bettermenu_fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric": ">=${fabric_version}",
+    "minecraft": ">=${mc_version}",
+    "cloth-config2": ">=${clothconfig_version_fabric}",
+    "java": ">=17",
+    "yungsapi": ">=${mc_version}-Fabric-${yungsapi_version}"
+  }
+}
