@@ -1,5 +1,9 @@
 package com.yungnickyoung.minecraft.bettermenu.services;
 
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.resources.ResourceLocation;
+
 public interface IPlatformHelper {
     /**
      * Gets the name of the current platform
@@ -22,4 +26,6 @@ public interface IPlatformHelper {
      * @return True if in a development environment, false otherwise.
      */
     boolean isDevelopmentEnvironment();
+
+    void renderBackground(Screen screen, GuiGraphics guiGraphics, ResourceLocation backgroundLocation);
 }

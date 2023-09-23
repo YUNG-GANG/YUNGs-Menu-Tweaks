@@ -1,12 +1,15 @@
 {
   "required": true,
   "package": "com.yungnickyoung.minecraft.bettermenu.mixin",
+  "plugin": "com.yungnickyoung.minecraft.bettermenu.BetterMenuMixinPluginFabric",
   "compatibilityLevel": "JAVA_17",
   "refmap": "bettermenu.refmap.json",
   "mixins": [
   ],
   "client": [
-    "AbstractSelectionListMixinFabric"
+    "AbstractSelectionListMixinFabric",
+    "compat.modmenu.ModMenuDescriptionListWidgetMixin",
+    "compat.modmenu.ModMenuModsScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1
