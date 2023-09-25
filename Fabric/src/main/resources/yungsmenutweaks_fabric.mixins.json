@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "package": "com.yungnickyoung.minecraft.yungsmenutweaks.mixin",
+  "plugin": "com.yungnickyoung.minecraft.yungsmenutweaks.YungsMenuTweaksMixinPluginFabric",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "yungsmenutweaks.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "AbstractSelectionListMixinFabric",
+    "compat.modmenu.ModMenuDescriptionListWidgetMixin",
+    "compat.modmenu.ModMenuModsScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

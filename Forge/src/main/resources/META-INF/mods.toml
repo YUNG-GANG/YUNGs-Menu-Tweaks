@@ -1,7 +1,7 @@
 modLoader="javafml"
 loaderVersion="[46,)"
 license="LGPLv3"
-issueTrackerURL="https://github.com/yungnickyoung/YUNGs-Better-Menu/issues"
+issueTrackerURL="https://github.com/yungnickyoung/YUNGs-Menu-Tweaks/issues"
 
 [[mods]]
     modId="${mod_id}"
@@ -11,7 +11,7 @@ issueTrackerURL="https://github.com/yungnickyoung/YUNGs-Better-Menu/issues"
     authors="YUNGNICKYOUNG"
     description="${mod_description}"
     logoFile="logo.png"
-    displayURL="https://www.curseforge.com/minecraft/mc-mods/yungs-better-menu"
+    displayURL="https://www.curseforge.com/minecraft/mc-mods/yungs-menu-tweaks"
 
 [[dependencies.${mod_id}]]
     modId="minecraft"

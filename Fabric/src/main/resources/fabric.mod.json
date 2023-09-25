@@ -8,9 +8,9 @@
     "YUNGNICKYOUNG"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-menu-fabric",
-    "sources": "https://github.com/yungnickyoung/YUNGs-Better-Menu",
-    "issues": "https://github.com/yungnickyoung/YUNGs-Better-Menu/issues",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/yungs-menu-tweaks-fabric",
+    "sources": "https://github.com/yungnickyoung/YUNGs-Menu-Tweaks",
+    "issues": "https://github.com/yungnickyoung/YUNGs-Menu-Tweaks/issues",
     "discord": "discord.gg/rns3beq"
   },
   "license": "LGPLv3",
@@ -18,15 +18,15 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "com.yungnickyoung.minecraft.bettermenu.BetterMenuFabric"
+      "com.yungnickyoung.minecraft.yungsmenutweaks.YungsMenuTweaksFabric"
     ],
     "modmenu": [
-      "com.yungnickyoung.minecraft.bettermenu.config.gui.BMModMenu"
+      "com.yungnickyoung.minecraft.yungsmenutweaks.config.gui.YMTModMenu"
     ]
   },
   "mixins": [
-    "bettermenu.mixins.json",
-    "bettermenu_fabric.mixins.json"
+    "yungsmenutweaks.mixins.json",
+    "yungsmenutweaks_fabric.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
