@@ -12,7 +12,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 public class ConfigModuleForge {
     public static void init() {
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, YMTConfigForge.SPEC, "yungsmenutweaks-forge-1_20.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, YMTConfigForge.SPEC, "yungsmenutweaks-forge-1_20_1.toml");
         MinecraftForge.EVENT_BUS.addListener(ConfigModuleForge::onWorldLoad);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(ConfigModuleForge::onConfigChange);
     }
