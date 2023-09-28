@@ -38,5 +38,14 @@
   },
   "suggests": {
     "modmenu": ">=${modmenu_version_fabric}"
+  },
+  "custom": {
+    "catalogue": {
+      "icon": {
+        "image": "icon.png"
+      },
+      "banner": "logo.png",
+      "background": "catalogue_background.png"
+    }
   }
 }
