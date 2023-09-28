@@ -8,8 +8,7 @@
   ],
   "client": [
     "AbstractSelectionListMixinFabric",
-    "compat.modmenu.ModMenuDescriptionListWidgetMixin",
-    "compat.modmenu.ModMenuModsScreenMixin"
+    "compat.modmenu.ModMenuDescriptionListWidgetMixin"
   ],
   "injectors": {
     "defaultRequire": 1
