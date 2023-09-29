@@ -9,6 +9,6 @@
   "text.autoconfig.yungsmenutweaks-fabric-1_20_1.option.yungsMenuTweaks.enableBackgroundTexture.@Tooltip[0]": "若启用，将尽可能使用自定义背景纹理。",
   "text.autoconfig.yungsmenutweaks-fabric-1_20_1.option.yungsMenuTweaks.enableBackgroundTexture.@Tooltip[1]": "使用的纹理由下方的“自定义背景纹理”选项指定。",
   "text.autoconfig.yungsmenutweaks-fabric-1_20_1.option.yungsMenuTweaks.backgroundTexture": "自定义背景纹理",
-  "text.autoconfig.yungsmenutweaks-fabric-1_20_1.option.yungsMenuTweaks.backgroundTexture.@Tooltip[0]": "用作自定义背景的16x16纹理，而不是经典的泥土。",
+  "text.autoconfig.yungsmenutweaks-fabric-1_20_1.option.yungsMenuTweaks.backgroundTexture.@Tooltip[0]": "用作自定义背景的16x16纹理，取代经典的泥土。",
   "text.autoconfig.yungsmenutweaks-fabric-1_20_1.option.yungsMenuTweaks.backgroundTexture.@Tooltip[1]": "仅当“启用自定义背景纹理”选项为“是”时才会生效。"
 }
