@@ -26,6 +26,5 @@ public class FabricPlatformHelper implements IPlatformHelper {
         guiGraphics.setColor(0.25F, 0.25F, 0.25F, 1.0F);
         guiGraphics.blit(backgroundLocation, 0, 0, 0, 0.0F, 0.0F, screen.width, screen.height, 32, 32);
         guiGraphics.setColor(1.0F, 1.0F, 1.0F, 1.0F);
-//        MinecraftForge.EVENT_BUS.post(new net.minecraftforge.client.event.ScreenEvent.BackgroundRendered(this, guiGraphics));
     }
 }
