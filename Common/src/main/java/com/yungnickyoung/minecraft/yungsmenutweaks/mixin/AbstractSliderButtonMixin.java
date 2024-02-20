@@ -22,11 +22,11 @@ public abstract class AbstractSliderButtonMixin extends AbstractWidget {
      * Allows scroll wheel to affect sliders.
      */
     @Override
-    public boolean mouseScrolled(double mouseX, double mouseY, double scrollAmount) {
+    public boolean mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY) {
         if (YungsMenuTweaksCommon.CONFIG.enableMouseScrollOnSliders) {
-            if (scrollAmount > 0.0) {
+            if (scrollY > 0.0) {
                 this.setValue(this.value + 0.01);
-            } else if (scrollAmount < 0.0) {
+            } else if (scrollY < 0.0) {
                 this.setValue(this.value - 0.01);
             }
 

@@ -14,13 +14,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(AbstractSelectionList.class)
 public abstract class AbstractSelectionListMixinFabric {
     @Inject(method = "mouseScrolled", at = @At("HEAD"), cancellable = true)
-    public void yungsmenutweaks_mouseScrolled(double mouseX, double mouseY, double scrollAmount, CallbackInfoReturnable<Boolean> cir) {
+    public void yungsmenutweaks_mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY, CallbackInfoReturnable<Boolean> cir) {
         if (YungsMenuTweaksCommon.CONFIG.enableMouseScrollOnSliders && isOptionsList(this)) {
             for (OptionsList.Entry entry : asOptionList(this).children()) {
                 for (GuiEventListener child : entry.children()) {
                     if (child instanceof AbstractSliderButton sliderButton) {
                         if (child.isMouseOver(mouseX, mouseY)) {
-                            sliderButton.mouseScrolled(mouseX, mouseY, scrollAmount);
+                            sliderButton.mouseScrolled(mouseX, mouseY, scrollX, scrollY);
                             cir.setReturnValue(true);
                         }
                     }
