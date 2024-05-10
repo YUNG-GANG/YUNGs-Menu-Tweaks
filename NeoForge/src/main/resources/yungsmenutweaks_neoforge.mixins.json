@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.yungnickyoung.minecraft.yungsmenutweaks.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "yungsmenutweaks.refmap.json",
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8",
+  "client": [
+    "AbstractSelectionListMixinNeoForge",
+    "ScrollPanelMixinNeoForge"
+  ]
+}
