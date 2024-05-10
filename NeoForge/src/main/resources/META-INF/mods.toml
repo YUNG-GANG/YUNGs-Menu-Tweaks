@@ -11,7 +11,7 @@ issueTrackerURL="https://github.com/yungnickyoung/YUNGs-Menu-Tweaks/issues"
     authors="YUNGNICKYOUNG"
     description="${mod_description}"
     logoFile="logo.png"
-    displayURL="https://www.curseforge.com/minecraft/mc-mods/yungs-menu-tweaks"
+    displayURL="https://www.curseforge.com/minecraft/mc-mods/yungs-menu-tweaks-neoforge"
 
 [modproperties.${mod_id}]
     catalogueImageIcon="icon.png"
