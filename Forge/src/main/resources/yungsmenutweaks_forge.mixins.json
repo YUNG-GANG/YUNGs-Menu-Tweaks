@@ -10,7 +10,6 @@
   },
   "minVersion": "0.8",
   "client": [
-    "AbstractSelectionListMixinForge",
-    "ScrollPanelMixinForge"
+    "AbstractSelectionListMixinForge"
   ]
 }

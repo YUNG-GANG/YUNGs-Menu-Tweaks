@@ -6,8 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "AbstractSelectionListMixinFabric",
-    "compat.modmenu.ModMenuDescriptionListWidgetMixin"
+    "AbstractSelectionListMixinFabric"
   ],
   "injectors": {
     "defaultRequire": 1
