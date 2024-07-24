@@ -11,12 +11,12 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(ScrollPanel.class)
 public abstract class ScrollPanelMixinNeoForge {
-    @Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/resources/ResourceLocation;)V"))
-    private void yungsmenutweaks_renderModMenuScreenBackground(int i, ResourceLocation id) {
-        if (YungsMenuTweaksCommon.CONFIG.enableBackgroundTexture && id.equals(Screen.BACKGROUND_LOCATION)) {
-            RenderSystem.setShaderTexture(0, YungsMenuTweaksCommon.CONFIG.backgroundTexture);
-        } else {
-            RenderSystem.setShaderTexture(0, Screen.BACKGROUND_LOCATION);
-        }
-    }
+//    @Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/resources/ResourceLocation;)V"))
+//    private void yungsmenutweaks_renderModMenuScreenBackground(int i, ResourceLocation id) {
+//        if (YungsMenuTweaksCommon.CONFIG.enableBackgroundTexture && id.equals(Screen.BACKGROUND_LOCATION)) {
+//            RenderSystem.setShaderTexture(0, YungsMenuTweaksCommon.CONFIG.backgroundTexture);
+//        } else {
+//            RenderSystem.setShaderTexture(0, Screen.BACKGROUND_LOCATION);
+//        }
+//    }
 }

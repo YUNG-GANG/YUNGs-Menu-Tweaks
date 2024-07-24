@@ -29,9 +29,9 @@ public class ConfigModuleFabric {
         if (backgroundTexture != null) {
             YungsMenuTweaksCommon.CONFIG.backgroundTexture = backgroundTexture;
         } else {
-            YungsMenuTweaksCommon.LOGGER.error("Invalid background texture path: " + configFabric.yungsMenuTweaks.backgroundTexture);
+            YungsMenuTweaksCommon.LOGGER.error("Invalid background texture path: {}", configFabric.yungsMenuTweaks.backgroundTexture);
             YungsMenuTweaksCommon.LOGGER.error("Using default background texture path instead: textures/block/dirt.png");
-            YungsMenuTweaksCommon.CONFIG.backgroundTexture = new ResourceLocation("textures/block/dirt.png");
+            YungsMenuTweaksCommon.CONFIG.backgroundTexture = ResourceLocation.withDefaultNamespace("textures/block/dirt.png");
         }
     }
 }

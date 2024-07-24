@@ -12,7 +12,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 public class ConfigModuleForge {
     public static void init() {
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, YMTConfigForge.SPEC, "yungsmenutweaks-forge-1_20_4.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, YMTConfigForge.SPEC, "yungsmenutweaks-forge-1_21.toml");
         MinecraftForge.EVENT_BUS.addListener(ConfigModuleForge::onWorldLoad);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(ConfigModuleForge::onConfigChange);
     }
@@ -35,9 +35,9 @@ public class ConfigModuleForge {
         if (backgroundTexture != null) {
             YungsMenuTweaksCommon.CONFIG.backgroundTexture = backgroundTexture;
         } else {
-            YungsMenuTweaksCommon.LOGGER.error("Invalid background texture path: " + YMTConfigForge.backgroundTexture.get());
+            YungsMenuTweaksCommon.LOGGER.error("Invalid background texture path: {}", YMTConfigForge.backgroundTexture.get());
             YungsMenuTweaksCommon.LOGGER.error("Using default background texture path instead: textures/block/dirt.png");
-            YungsMenuTweaksCommon.CONFIG.backgroundTexture = new ResourceLocation("textures/block/dirt.png");
+            YungsMenuTweaksCommon.CONFIG.backgroundTexture = ResourceLocation.withDefaultNamespace("textures/block/dirt.png");
         }
     }
 }

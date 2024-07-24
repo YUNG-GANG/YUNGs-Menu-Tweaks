@@ -10,11 +10,11 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 
 @Mixin(ExperimentsScreen.class)
 public class ExperimentsScreenMixin {
-    @ModifyArg(method = "renderBackground", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphics;blit(Lnet/minecraft/resources/ResourceLocation;IIFFIIII)V"), index = 0)
-    private ResourceLocation yungsmenutweaks_changeExperimentsScreenBackground(ResourceLocation original) {
-        if (YungsMenuTweaksCommon.CONFIG.enableBackgroundTexture && original.equals(Screen.BACKGROUND_LOCATION)) {
-            return YungsMenuTweaksCommon.CONFIG.backgroundTexture;
-        }
-        return original;
-    }
+//    @ModifyArg(method = "renderBackground", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphics;blit(Lnet/minecraft/resources/ResourceLocation;IIFFIIII)V"), index = 0)
+//    private ResourceLocation yungsmenutweaks_changeExperimentsScreenBackground(ResourceLocation original) {
+//        if (YungsMenuTweaksCommon.CONFIG.enableBackgroundTexture && original.equals(Screen.BACKGROUND_LOCATION)) {
+//            return YungsMenuTweaksCommon.CONFIG.backgroundTexture;
+//        }
+//        return original;
+//    }
 }

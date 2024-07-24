@@ -11,8 +11,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(Screen.class)
 public class ScreenMixin {
-    @Inject(method = "renderDirtBackground", at = @At("HEAD"), cancellable = true)
-    public void yungsmenutweaks_overrideDirtBackground(GuiGraphics guiGraphics, CallbackInfo ci) {
+    @Inject(method = "renderBackground", at = @At("HEAD"), cancellable = true)
+    public void yungsmenutweaks_overrideBackground(GuiGraphics guiGraphics, int $$1, int $$2, float $$3, CallbackInfo ci) {
         if (YungsMenuTweaksCommon.CONFIG.enableBackgroundTexture) {
             Services.PLATFORM.renderBackground((Screen) (Object) this, guiGraphics, YungsMenuTweaksCommon.CONFIG.backgroundTexture);
             ci.cancel();

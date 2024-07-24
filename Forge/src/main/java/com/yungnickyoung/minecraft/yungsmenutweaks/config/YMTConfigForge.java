@@ -29,14 +29,14 @@ public class YMTConfigForge {
 
         enableBackgroundTexture = BUILDER
                 .comment(
-                        " If enabled, a custom background texture will be used where possible.\n" +
+                        " If enabled, a custom background texture will be used in menus where possible.\n" +
                         " The texture used is specified by the Custom Background Texture option below.\n" +
-                        " Default: true")
+                        " Default: false")
                 .define("Enable Custom Background Texture", false);
 
         backgroundTexture = BUILDER
                 .comment(
-                        " A 16x16 texture to use as a custom background, instead of the typical dirt.\n" +
+                        " A texture to use as a custom background, instead of the typical blurred background.\n" +
                         " Only does anything if the Enable Custom Background Texture option is true.\n" +
                         " Default: minecraft:textures/block/dirt.png")
                 .define("Custom Background Texture", "minecraft:textures/block/dirt.png");

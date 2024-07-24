@@ -13,7 +13,7 @@
     "issues": "https://github.com/yungnickyoung/YUNGs-Menu-Tweaks/issues",
     "discord": "discord.gg/rns3beq"
   },
-  "license": "LGPLv3",
+  "license": "${license}",
   "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
@@ -33,8 +33,8 @@
     "fabric": ">=${fabric_version}",
     "minecraft": ">=${mc_version}",
     "cloth-config2": ">=${clothconfig_version_fabric}",
-    "java": ">=17",
-    "yungsapi": ">=${yungsapi_mc_version}-Fabric-${yungsapi_version}"
+    "java": ">=${java_version}",
+    "yungsapi": ">=${mc_version}-Fabric-${yungsapi_version}"
   },
   "suggests": {
     "modmenu": ">=${modmenu_version_fabric}"

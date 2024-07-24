@@ -12,13 +12,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(AbstractSelectionList.class)
 public class AbstractSelectionListMixin {
-    @ModifyArg(method = "renderWidget", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphics;blit(Lnet/minecraft/resources/ResourceLocation;IIFFIIII)V"), index = 0)
-    public ResourceLocation yungsmenutweaks_changeSelectionListBackground(ResourceLocation original) {
-        if (YungsMenuTweaksCommon.CONFIG.enableBackgroundTexture && original.equals(Screen.BACKGROUND_LOCATION)) {
-            return YungsMenuTweaksCommon.CONFIG.backgroundTexture;
-        }
-        return original;
-    }
+//    @ModifyArg(
+//            method = "renderListBackground",
+//            at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/GuiGraphics;blit(Lnet/minecraft/resources/ResourceLocation;IIFFIIII)V"), index = 0)
+//    public ResourceLocation yungsmenutweaks_changeSelectionListBackground(ResourceLocation original) {
+//        if (YungsMenuTweaksCommon.CONFIG.enableBackgroundTexture) {
+//            return YungsMenuTweaksCommon.CONFIG.backgroundTexture;
+//        }
+//        return original;
+//    }
 
     /**
      * Registers right-clicking all selection entry buttons as a valid click action.
