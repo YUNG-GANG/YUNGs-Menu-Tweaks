@@ -1,12 +1,13 @@
 package com.yungnickyoung.minecraft.yungsmenutweaks.mixin;
 
+import com.mojang.blaze3d.platform.InputConstants;
 import com.yungnickyoung.minecraft.yungsmenutweaks.YungsMenuTweaksCommon;
-import com.yungnickyoung.minecraft.yungsmenutweaks.gui.IRightClickable;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.CycleButton;
 import net.minecraft.client.gui.screens.Screen;
+import org.lwjgl.glfw.GLFW;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -20,16 +21,12 @@ public abstract class CycleButtonMixin {
      */
     @Inject(method = "onPress", at = @At("HEAD"), cancellable = true)
     public void yungsmenutweaks_onPressCycleButton(CallbackInfo ci) {
-        if (Screen.hasShiftDown() || (YungsMenuTweaksCommon.CONFIG.enableRightClickCycleButton && wasRightClicked(this))) {
+        boolean isMouseRight = GLFW.glfwGetMouseButton(Minecraft.getInstance().getWindow().getWindow(), InputConstants.MOUSE_BUTTON_RIGHT) == GLFW.GLFW_PRESS;
+        if (Screen.hasShiftDown() || (YungsMenuTweaksCommon.CONFIG.enableRightClickCycleButton && isMouseRight)) {
             this.cycleValue(-1);
         } else {
             this.cycleValue(1);
         }
         ci.cancel();
-    }
-
-    @Unique
-    private boolean wasRightClicked(Object obj) {
-        return obj instanceof IRightClickable && ((IRightClickable) obj).wasRightClicked();
     }
 }

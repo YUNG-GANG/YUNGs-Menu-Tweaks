@@ -12,7 +12,6 @@
   "client": [
     "AbstractSelectionListMixin",
     "AbstractSliderButtonMixin",
-    "AbstractWidgetMixin",
     "CycleButtonMixin",
     "ScreenMixin"
   ]
