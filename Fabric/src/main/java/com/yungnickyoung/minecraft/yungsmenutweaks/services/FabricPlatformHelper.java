@@ -1,11 +1,10 @@
 package com.yungnickyoung.minecraft.yungsmenutweaks.services;
 
-import com.mojang.blaze3d.systems.RenderSystem;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.RenderPipelines;
+import net.minecraft.resources.Identifier;
 
 public class FabricPlatformHelper implements IPlatformHelper {
     @Override
@@ -24,9 +23,7 @@ public class FabricPlatformHelper implements IPlatformHelper {
     }
 
     @Override
-    public void renderBackground(Screen screen, GuiGraphics guiGraphics, ResourceLocation backgroundLocation) {
-        RenderSystem.enableBlend();
-        guiGraphics.blit(RenderType::guiTextured, backgroundLocation, 0, 0, 0, 0, screen.width, screen.height, 32, 32, 0xFF404040);
-        RenderSystem.disableBlend();
+    public void renderBackground(Screen screen, GuiGraphicsExtractor guiGraphics, Identifier backgroundLocation, final int mouseX, final int mouseY, final float partialTick) {
+        guiGraphics.blit(RenderPipelines.GUI_TEXTURED, backgroundLocation, 0, 0, 0, 0, screen.width, screen.height, 32, 32, 0xFF404040);
     }
 }

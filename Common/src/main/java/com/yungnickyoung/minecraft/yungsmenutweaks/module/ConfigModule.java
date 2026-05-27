@@ -1,10 +1,10 @@
 package com.yungnickyoung.minecraft.yungsmenutweaks.module;
 
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 public class ConfigModule {
     public boolean enableRightClickCycleButton = true;
     public boolean enableMouseScrollOnSliders = true;
     public boolean enableBackgroundTexture = false;
-    public ResourceLocation backgroundTexture = ResourceLocation.withDefaultNamespace("textures/block/dirt.png");
+    public Identifier backgroundTexture = Identifier.withDefaultNamespace("textures/block/dirt.png");
 }

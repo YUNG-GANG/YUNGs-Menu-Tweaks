@@ -1,8 +1,8 @@
 package com.yungnickyoung.minecraft.yungsmenutweaks.services;
 
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 public interface IPlatformHelper {
     /**
@@ -27,5 +27,5 @@ public interface IPlatformHelper {
      */
     boolean isDevelopmentEnvironment();
 
-    void renderBackground(Screen screen, GuiGraphics guiGraphics, ResourceLocation backgroundLocation);
+    void renderBackground(Screen screen, GuiGraphicsExtractor guiGraphics, Identifier backgroundLocation, final int mouseX, final int mouseY, final float partialTick);
 }
