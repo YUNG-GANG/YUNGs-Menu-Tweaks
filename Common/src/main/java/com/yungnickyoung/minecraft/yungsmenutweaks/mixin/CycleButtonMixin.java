@@ -21,8 +21,8 @@ public abstract class CycleButtonMixin {
      */
     @Inject(method = "onPress", at = @At("HEAD"), cancellable = true)
     public void yungsmenutweaks_onPressCycleButton(CallbackInfo ci) {
-        boolean isMouseRight = GLFW.glfwGetMouseButton(Minecraft.getInstance().getWindow().getWindow(), InputConstants.MOUSE_BUTTON_RIGHT) == GLFW.GLFW_PRESS;
-        if (Screen.hasShiftDown() || (YungsMenuTweaksCommon.CONFIG.enableRightClickCycleButton && isMouseRight)) {
+        boolean isMouseRight = GLFW.glfwGetMouseButton(Minecraft.getInstance().getWindow().handle(), InputConstants.MOUSE_BUTTON_RIGHT) == GLFW.GLFW_PRESS;
+        if (Minecraft.getInstance().hasShiftDown() || (YungsMenuTweaksCommon.CONFIG.enableRightClickCycleButton && isMouseRight)) {
             this.cycleValue(-1);
         } else {
             this.cycleValue(1);

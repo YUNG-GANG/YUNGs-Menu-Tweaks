@@ -4,7 +4,7 @@ import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
 
-@Config(name="yungsmenutweaks-fabric-1_21")
+@Config(name="yungsmenutweaks-fabric-26_1")
 public class YMTConfigFabric implements ConfigData {
     @ConfigEntry.Category("YUNG's Menu Tweaks")
     @ConfigEntry.Gui.TransitiveObject
